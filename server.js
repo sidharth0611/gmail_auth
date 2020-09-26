@@ -2,6 +2,7 @@ const fs = require('fs');
 const readline = require('readline');
 const {google} = require('googleapis');
 const express = require('express');
+const app = express();
 
 // If modifying these scopes, delete token.json.
 const SCOPES = ['https://www.googleapis.com/auth/gmail.readonly'];
@@ -91,3 +92,5 @@ function listLabels(auth) {
 }
 
 //token.json will be generated on running
+const PORT = process.env.PORT || 7000;
+app.listen(PORT, console.log(`Server started on port ${PORT}`));
