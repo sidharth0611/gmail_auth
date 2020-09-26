@@ -1,0 +1,17 @@
+{
+  "name": "google_auth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "googleapis": "^60.0.1",
+    "nodemailer": "^6.4.11"
+  }
+}
