@@ -1,6 +1,8 @@
 const nodemailer = require("nodemailer");
 const fs = require("fs");
 const { google } = require("googleapis");
+const express = require("express");
+const app = express();
 const OAuth2 = google.auth.OAuth2;
 const oauth2Client = new OAuth2(
      "351238074342-9sis2ffivi2pumod3lqn3g7kfa8gm0og.apps.googleusercontent.com",
@@ -46,3 +48,5 @@ smtpTransport.sendMail(mailOptions, (error, response) => {
      error ? console.log(error) : console.log(response);
      smtpTransport.close();
 });
+const PORT = process.env.PORT || 7000;
+app.listen(PORT, console.log(`Server started on port ${PORT}`));
