@@ -37,8 +37,8 @@ tls: {
   rejectUnauthorized: false
 }
 const mailOptions = {
-     from: "jha.as@somaiya.edu",
-     to: "arnav.mahajan@somaiya.edu",
+     from: "sidharthparekh!@gmail.com",
+     to: "sidharth.p@somaiya.edu",
      subject: "Node.js Email with Secure OAuth",
      generateTextFromHTML: true,
      html: "<b>test</b>"
